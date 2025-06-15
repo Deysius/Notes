@@ -46,7 +46,6 @@ public partial class NotePage : ContentPage
     {
         if (BindingContext is Models.Note note)
         {
-            // Delete the file.
             if (File.Exists(note.Filename))
                 File.Delete(note.Filename);
         }

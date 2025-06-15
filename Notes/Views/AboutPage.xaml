@@ -6,17 +6,21 @@
     <ContentPage.BindingContext>
         <models:About />
     </ContentPage.BindingContext>
-    <VerticalStackLayout Spacing="10" Margin="10">
+
+    <VerticalStackLayout Spacing="10" Margin="10" HorizontalOptions="Center">
+        <Image Source="fuecoco.jpg"
+               HeightRequest="100"
+               HorizontalOptions="Center"/>
+
         <HorizontalStackLayout Spacing="10">
             <Image Source="logoudla.png"
-                   SemanticProperties.Description="Creación de una aplicación MAUI de .NET MAUI  Microsoft Learn "
+                   SemanticProperties.Description="Me gustan los videojuegos de accion y aventura"
                    HeightRequest="64" />
             <Label FontSize="22" FontAttributes="Bold" Text="Josue Ayala" VerticalOptions="End" />
-            <Label FontSize="22" Text="Creación de una aplicación MAUI de .NET MAUI  Microsoft Learn" VerticalOptions="End" />
+            <Label FontSize="22" Text="Me gustan los videojuegos de accion y aventura" VerticalOptions="End" />
         </HorizontalStackLayout>
 
         <Label Text="{Binding Message}" />
         <Button Text="Visitar Pagina" Clicked="LearnMore_Clicked" />
     </VerticalStackLayout>
-
 </ContentPage>
